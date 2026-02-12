@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⛅Weather Dashboard</h1>
+            <p> your real time weather companion</p>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter name...." value="India">
+            <button type="button" onclick="searchWeather()">Search</button>
+        </div>
+        <div id="errorMsg" class="error"></div>
+        <div id="loading" class="loading">Loading weather data...</div>
+        <div id="weatherContent" class="hidden">
+            <div class="current-weather">
+                <div class="current-weather-header">
+                    <div>
+                        <div class="location" id="location">----</div>
+                        <div class="data" id="date">----</div>
+                    </div>
+                </div>
+                <div class="current-main">
+                    <div class="weather-icon" id="currentIcon">☀️</div>
+                    <div class="temp-info">
+                        <div class="temperature" id="temperature">------</div>
+                        <div class="description" id="description">-----</div>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="daily-item">
+                        <div class="label">Feels Like</div>
+                        <div class="value" id="feelsLike">----</div>
+                    </div>
+                    <div class="daily-item">
+                        <div class="label">Humidity</div>
+                        <div class="value" id="humidity">-----</div>
+                    </div>
+                    <div class="daily-item">
+                        <div class="label">Wind speed</div>
+                        <div class="value" id="windSpeed">-----</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
